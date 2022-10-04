@@ -93,6 +93,7 @@ The prerequisites are based on [this](https://www.waveshare.com/wiki/7.5inch_e-P
   
   #For Pi 4, you need to update it：
   cd /tmp
+  sudo apt install libc6
   wget https://project-downloads.drogon.net/wiringpi-latest.deb
   sudo dpkg -i wiringpi-latest.deb
   ```
@@ -108,7 +109,7 @@ The prerequisites are based on [this](https://www.waveshare.com/wiki/7.5inch_e-P
    ```sh
    sudo apt-get update
    # requirements by waveshare
-   sudo apt-get install python3-pip python3-pil python3-numpy RPi.GPIO python-spidev
+   sudo apt-get install python3-pip python3-pil python3-numpy python3-rpi.gpio python3-spidev
    # requirements by this repo
    sudo python3 -m pip install -r requirements.txt
    ```
